@@ -41,14 +41,14 @@ public class freqLogic {
         List<Map.Entry<String, Integer>> sorted = new ArrayList<>(words.entrySet());
         sorted.sort(Map.Entry.<String, Integer>comparingByValue().reversed());
 
-        for(Map.Entry<String, Integer> word : sorted){
+        for (Map.Entry<String, Integer> word : sorted) {
             sb.append(word).append("\n");
         }
         return sb.toString();
     }
 
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\Teodor Poshyvak\\OneDrive\\Робочий стіл\\java\\HmwFileStream\\src\\main\\resources\\Frequency\\words.txt");
+        File file = new File("src/main/resources/Frequency/words.txt");
         System.out.println(freq(file));
     }
 }

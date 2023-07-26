@@ -52,8 +52,8 @@ public class User {
     }
 
     public static void main(String[] args) {
-        String inputFilePath = "C:\\Users\\Teodor Poshyvak\\OneDrive\\Робочий стіл\\java\\HmwFileStream\\src\\main\\resources\\JsonFile\\file.txt";
-        String outputFilePath = "C:\\Users\\Teodor Poshyvak\\OneDrive\\Робочий стіл\\java\\HmwFileStream\\src\\main\\resources\\JsonFile\\user.json";
+        String inputFilePath = "src/main/resources/JsonFile/file.txt";
+        String outputFilePath = "src/main/resources/JsonFile/user.json";
         File inputFile = new File(inputFilePath);
         File outputFile = new File(outputFilePath);
         writerJson(inputFile, outputFile);
